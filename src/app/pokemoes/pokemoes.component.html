@@ -1,0 +1,20 @@
+<div class="page-header">
+  <h1>Pokemoes</h1>
+</div>
+
+<div class="row">
+  <div class="col-md-3" *ngFor="let pokemon of pokemoes">
+
+    <div class="panel panel-default">
+      <div class="panel-body">
+        <a [routerLink]="['/pokemon', pokemon.id]">
+          <img class="text-center" src="../../assets/img/{{pokemon.imagem}}" alt="" style="width: 100%;">
+        </a>
+      </div>
+      <div class="card-header text-center" style="color: black;">
+        <b>{{pokemon.nome}}</b>
+      </div>
+    </div>
+  </div>
+
+</div>

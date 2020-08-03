@@ -1,0 +1,30 @@
+<div class="page-header">
+  <h1>{{pokemon[0].nome}}</h1>
+   <a [routerLink]="['/pokemoes']"> <button type="button" class="btn btn-outline-dark">
+      Voltar
+    </button></a>
+</div>
+
+<div class="row">
+  <div class="col-md-3">
+
+    <div class="panel panel-default">
+      <div class="panel-body">
+        <a [routerLink]="['/pokemon', pokemon[0].id]">
+          <img class="text-center" src="../../assets/img/{{pokemon[0].imagem}}" alt="" style="width: 100%;">
+        </a>
+      </div>
+      <div class="card-header text-black text-center">
+        <b>{{pokemon[0].nome}}</b>
+      </div>
+    </div>
+  </div>
+
+  <div class="col-md-9">
+    <h2>Habilidades</h2>
+    <p>{{pokemon[0].habilidades}}</p>
+    <h2>fraquezas</h2>
+    <p>{{pokemon[0].fraqueza}}</p>
+  </div>
+
+</div>
